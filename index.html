@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Minhas tarefas</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sistema de Cadastro de Tarefas</h1>
+        <p class="boas-vindas">Bem-vindo ao meu primeiro sistema web.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="pages/cadastro.html">Cadastro de tarefa</a></li>
+            <li><a href="pages/tabela.html">Tarefas concluídas</a></li>
+            <li><a href="pages/buscar.html">Buscar Tarefa</a></li>
+            <li><a href="pages/sobre.html">Sobre o sistema</a></li>
+            <li><a href="pages/contato.html">Fale Conosco</a></li>
+            <li><a href="pages/faq.html">Perguntas Frequentes</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="introduction">
+            <h2>O que você pode fazer aqui?</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <span class="card-icon">➕</span>
+                    <h3>Criar Tarefas</h3>
+                    <p>Organize suas obrigações diárias com prazos e metas.</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">✅</span>
+                    <h3>Finalizar</h3>
+                    <p>Marque itens concluídos e mantenha seu histórico atualizado.</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">✏️</span>
+                    <h3>Editar</h3>
+                    <p>Modifique descrições, detalhes ou prioridades quando quiser.</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">❌</span>
+                    <h3>Excluir</h3>
+                    <p>Remova tarefas descartadas ou criadas por engano.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tabela-section">
+            <h2>Suas Tarefas Atuais</h2>
+            <p class="tabela-intro">Abaixo estão listadas as tarefas pendentes e em progresso no sistema.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Descrição</th>
+                        <th>Prioridade</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Estudar HTML</td>
+                        <td><span class="badge badge-alta">Alta</span></td>
+                        <td>Em Progresso</td>
+                        <td>
+                            <a href="#" class="btn-action btn-edit">Editar</a>
+                            <a href="#" class="btn-action btn-delete">Excluir</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Estudar CSS</td>
+                        <td><span class="badge badge-media">Média</span></td>
+                        <td>Pendente</td>
+                        <td>
+                            <a href="#" class="btn-action btn-edit">Editar</a>
+                            <a href="#" class="btn-action btn-delete">Excluir</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Estudar JavaScript</td>
+                        <td><span class="badge badge-media">Média</span></td>
+                        <td>Pendente</td>
+                        <td>
+                            <a href="#" class="btn-action btn-edit">Editar</a>
+                            <a href="#" class="btn-action btn-delete">Excluir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Estudar PHP</td>
+                        <td><span class="badge badge-baixa">Baixa</span></td>
+                        <td>Pendente</td>
+                        <td>
+                            <a href="#" class="btn-action btn-edit">Editar</a>
+                            <a href="#" class="btn-action btn-delete">Excluir</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Estudar Banco de Dados</td>
+                        <td><span class="badge badge-alta">Alta</span></td>
+                        <td>Pendente</td>
+                        <td>
+                            <a href="#" class="btn-action btn-edit">Editar</a>
+                            <a href="#" class="btn-action btn-delete">Excluir</a>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="5">
+                            <strong>Total: 5 tarefas ativas</strong>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <div class="logo-container">
+                <img src="https://via.placeholder.com/200x40?text=Gerenciador+de+Tarefas"
+                    alt="Logo do sistema CRUD de tarefas" width="200" height="40">
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p><strong>Sistema desenvolvido como projeto de aprendizado. Nenhum dado é compartilhado.</strong></p>
+
+        <p class="footer-links">
+            <a href="pages/sobre.html">Sobre o sistema</a> |
+            <a href="pages/contato.html">Fale Conosco</a> |
+            <a href="pages/faq.html">Perguntas Frequentes</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

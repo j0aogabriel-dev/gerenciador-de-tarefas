@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Tarefa - Sistema</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    
+    <header>
+        <h1>Nova Tarefa</h1>
+        <p><a href="../index.html">Voltar para a Página Inicial</a></p>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Cadastrar Nova Tarefa</h2>
+            <p class="form-intro">Preencha os dados da tarefa no formulário abaixo para adicioná-la ao seu painel.</p>
+            
+            <form method="post" action="">
+                <div class="form-group">
+                    <label for="descricao">Descrição:</label>
+                    <input type="text" id="descricao" name="descricao" placeholder="EX: Estudar para prova" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="data_limite">Data Limite (Opcional):</label>
+                    <input type="date" id="data_limite" name="data_limite">
+                </div>
+
+                <div class="form-group">
+                    <label for="detalhes">Detalhes (Opcional):</label>
+                    <textarea name="detalhes" id="detalhes" rows="4" placeholder="Descreva a tarefa com mais detalhes"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="prioridade">Prioridade:</label>
+                    <select name="prioridade" id="prioridade" required>
+                        <option value="baixa">Baixa</option>
+                        <option value="media" selected>Média</option>
+                        <option value="alta">Alta</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="status">Status:</label>
+                    <select name="status" id="status">
+                        <option value="nao_iniciada" selected>Não Iniciada</option>
+                        <option value="em_andamento">Em Andamento</option>
+                    </select>
+                </div>
+
+                <div class="btn_cont">
+                    <button type="submit">Cadastrar tarefa</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Sistema desenvolvido como projeto de aprendizado. Nenhum dado é compartilhado.</strong></p>
+        <p class="footer-links">
+            <a href="sobre.html">Sobre o sistema</a> |
+            <a href="contato.html">Fale Conosco</a> |
+            <a href="faq.html">Perguntas Frequentes</a>
+        </p>
+    </footer>
+</body>
+
+</html>

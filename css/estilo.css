@@ -1,0 +1,411 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================
+   CABEÇALHO (HEADER) E MENU (NAV)
+   ============================================ */
+header {
+  background-color: #2c3e50;
+  padding: 20px;
+  margin: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+header p {
+  margin: 0;
+  font-size: 16px;
+  color: #b2bec3;
+  text-align: center;
+}
+
+header a {
+  color: #b2bec3;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+header a:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+nav {
+  background-color: #34495e;
+  color: white;
+  padding: 15px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+nav h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #ecf0f1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #3498db;
+}
+
+nav a.active {
+  color: #3498db;
+  border-bottom: 2px solid #3498db;
+}
+
+/* ============================================
+   ESTRUTURA PRINCIPAL (MAIN) E SEÇÕES
+   ============================================ */
+main {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  margin: 30px auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.introduction h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.introduction ul {
+  display: none;
+}
+
+.tabela-section, .form-section {
+  width: 100%;
+}
+
+.tabela-section h2, .form-section h2 {
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.tabela-intro, .form-intro {
+  color: #7f8c8d;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* ============================================
+   CARDS DE RECURSOS (INDEX.HTML)
+   ============================================ */
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 25px 0 40px 0;
+}
+
+.card {
+  flex: 1;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+  border-color: #2980b9;
+}
+
+.card-icon {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+.card p {
+  margin: 0;
+  font-size: 13px;
+  color: #7f8c8d;
+  line-height: 1.4;
+}
+
+/* ============================================
+   TABELAS E BADGES
+   ============================================ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #2c3e50;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #e8f4fd;
+}
+
+tfoot td {
+  text-align: center;
+  font-weight: bold;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+}
+
+.badge-alta { background-color: #e74c3c; }
+.badge-media { background-color: #f39c12; }
+.badge-baixa { background-color: #27ae60; }
+
+/* ============================================
+   FORMULÁRIOS E INPUTS
+   ============================================ */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input, select, textarea {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  resize: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+input:optional, textarea:optional, select:optional {
+  border-color: #bdc3c7;
+}
+
+input:valid, textarea:valid {
+  border-color: #27ae60;
+}
+
+input:invalid, textarea:invalid {
+  border-color: #e74c3c;
+}
+
+input:focus:invalid, textarea:focus:invalid {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* ============================================
+   BOTÕES E ELEMENTOS DE AÇÃO
+   ============================================ */
+button {
+  padding: 12px 24px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #34495e;
+}
+
+.btn_cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.btn-action {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 5px;
+  transition: background-color 0.2s;
+}
+
+.btn-edit {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #2980b9;
+}
+
+.btn-delete {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
+
+.btn-histor{
+  position: relative;
+  right: -550px;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+/* ============================================
+   ELEMENTOS DE COMPONENTES (FAQ E IMAGENS)
+   ============================================ */
+details {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 12px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+details[open] {
+  border-color: #3498db;
+  box-shadow: 0 4px 6px rgba(52, 152, 219, 0.05);
+}
+
+summary {
+  font-weight: bold;
+  color: #2c3e50;
+  cursor: pointer;
+  outline: none;
+}
+
+details p {
+  margin: 10px 0 0 0;
+  color: #7f8c8d;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+/* ============================================
+   RODAPÉ (FOOTER)
+   ============================================ */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #2c3e50;
+  color: white;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  display: inline-block;
+  color: #ecf0f1;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 4px 8px;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #3498db;
+  text-decoration: none;
+  transform: translateY(-2px);
+}

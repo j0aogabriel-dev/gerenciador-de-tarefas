@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fale Conosco - Sistema</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    
+    <header>
+        <h1>Fale Conosco</h1>
+        <p><a href="../index.html">Voltar para a Página Inicial</a></p>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Entre em Contato</h2>
+            <p class="form-intro">
+                <strong>Tem alguma pergunta ou ideia para compartilhar?</strong><br>
+                Utilize o formulário abaixo para nos enviar suas dúvidas ou sugestões. 
+                Nossa equipe analisa cada mensagem cuidadosamente e responderemos ao seu contato o mais breve possível. 
+                Valorizamos muito a sua participação!
+            </p>
+
+            <form method="post" action="">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite o seu e-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="assunto">Assunto:</label>
+                    <select name="assunto" id="assunto" required>
+                        <option value="duvida" selected>Dúvida</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="bug">Bug</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" rows="4" placeholder="Digite a sua mensagem" required></textarea>
+                </div>
+
+                <div class="btn_cont" style="gap: 10px;">
+                    <button type="reset">Limpar Campos</button>
+                    <button type="submit">Enviar Mensagem</button>
+                </div>
+            </form>
+            
+            <div class="logo-container">
+                <img src="https://via.placeholder.com/200x40?text=Gerenciador+de+Tarefas" alt="Logo do sistema de tarefas" width="200" height="40">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Sistema desenvolvido como projeto de aprendizado. Nenhum dado é compartilhado.</strong></p>
+        <p class="footer-links">
+            <a href="sobre.html">Sobre o sistema</a> |
+            <a href="faq.html">Perguntas Frequentes</a>
+        </p>
+    </footer>
+</body>
+
+</html>
