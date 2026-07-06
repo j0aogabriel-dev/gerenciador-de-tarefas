@@ -1,6 +1,6 @@
 # Gerenciador de Tarefas
 
-Sistema web para cadastro, listagem, edição e exclusão de tarefas. Projeto desenvolvido como parte de um curso de desenvolvimento web full stack, partindo do zero absoluto até a integração completa com banco de dados.
+Sistema web para cadastro, listagem, edição e exclusão de tarefas. Projeto desenvolvido como parte de um estudo pessoal de desenvolvimento web full stack, partindo do zero até a integração completa com banco de dados.
 
 ## 🚀 Funcionalidades
 
@@ -36,12 +36,6 @@ To-Do-List/
 │ ├── sobre.html
 │ └── tabela.html
 └── img/
-
-text
-
-## 📸 Capturas de Tela
-
-> *(adicione prints do sistema aqui — basta arrastar as imagens para dentro do editor do GitHub)*
 
 ## 🎯 Status do Projeto
 
